@@ -1,0 +1,9 @@
+package com.lgh.dao;
+
+public class Conn {
+	public static void getConnection(){
+		
+		
+	}
+
+}

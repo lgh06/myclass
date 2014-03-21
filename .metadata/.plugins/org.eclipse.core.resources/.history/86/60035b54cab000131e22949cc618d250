@@ -1,0 +1,5 @@
+package com.lgh.dao;
+
+public class Conn {
+
+}

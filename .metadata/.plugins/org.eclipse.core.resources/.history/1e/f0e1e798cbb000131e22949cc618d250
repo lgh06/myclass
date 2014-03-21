@@ -1,0 +1,13 @@
+package com.lgh.dao;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+
+public class Conn {
+	Connection conn = null;
+	Statement st = null;
+	ResultSet rs = null;
+	
+	
+
+}

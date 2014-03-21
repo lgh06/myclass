@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+E:\Users\xxgov\MyE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3915303704.index
+\lanjie\src
+E:\Users\xxgov\MyE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4237863621.index
+\strutsValidate\src
+E:\Users\xxgov\MyE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1215363347.index
+\stuff\src
+D:\Users\xxgov\MyE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3915303704.index
+\lanjie\src
