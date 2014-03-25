@@ -1,12 +1,12 @@
-package com.lgh.bean;
+package com.iss.pojo;
 
 public class Employee {
-	private int employeeId;
-	private String employeeName;
-	private String employeePassword;
-	private String employeeAge;
-	private String employeeAddress;
-	private Department department;
+	public int employeeId;
+	public String employeeName;
+	public String employeePassword;
+	public int employeeAge;
+	public String employeeAddress;
+	public Department department;
 	public int getEmployeeId() {
 		return employeeId;
 	}
@@ -25,10 +25,10 @@ public class Employee {
 	public void setEmployeePassword(String employeePassword) {
 		this.employeePassword = employeePassword;
 	}
-	public String getEmployeeAge() {
+	public int getEmployeeAge() {
 		return employeeAge;
 	}
-	public void setEmployeeAge(String employeeAge) {
+	public void setEmployeeAge(int employeeAge) {
 		this.employeeAge = employeeAge;
 	}
 	public String getEmployeeAddress() {
@@ -43,5 +43,4 @@ public class Employee {
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
-
 }

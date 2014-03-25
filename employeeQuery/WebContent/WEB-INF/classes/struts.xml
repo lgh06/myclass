@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    <struts>
+	    <package name="convertPackage"  extends="struts-default">  
+	   		 <interceptors>
+	    		<interceptor name="deptInterceptor" class="com.iss.interceptor.DeptInterceptor"></interceptor>
+	    	</interceptors>
+	    	<global-results>
+	    		<result name="error">/error.jsp</result>
+	    		<result name="login">/login.jsp</result>
+	    	</global-results>
+	    
+	    	<action name="registerEmployee" class="com.iss.action.EmployeeAction" method="registerEmployee">
+	    		<result>registerSuccess.jsp</result>
+	    	</action>
+	    	
+	    	<action name="loginEmployee" class="com.iss.action.EmployeeAction" method="registerEmployee">
+	    		<result>loginSuccess.jsp</result>
+	    	</action>
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	<action name="getAllEmp" class="com.iss.action.EmployeeAction" method="getAllEmp">
+	    		<result>queryEmployee.jsp</result>
+	    	</action>
+	    	<action name="getMyDeptEmp" class="com.iss.action.EmployeeAction" method="getMyDeptEmp">
+	    		<result>queryEmployee.jsp</result>
+	    	</action>
+	    	<action name="getMyselfInfo" class="com.iss.action.EmployeeAction" method="getMyselfInfo">
+	    		<result>queryEmployee.jsp</result>
+	    	</action>
+	    	
+	    	<!-- 查询的外壳 -->
+	    	<action name="queryEmp" class="com.iss.action.EmployeeAction" method="queryEmp">
+	    		<interceptor-ref name="deptInterceptor"></interceptor-ref>
+	    		<result>queryEmployee.jsp</result>
+	    		<result type="redirectAction" name="all">getAllEmp</result>
+	    		<result type="redirectAction" name="mydept">getMyDeptEmp</result>
+	    		<result type="redirectAction" name="myself">getMyselfInfo</result>
+	    	</action>
+	    	
+	   </package>
+    </struts>
